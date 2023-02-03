@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: netflix-sans;
+  src: url("./fonts/NetflixSans-Regular.otf") format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: netflix-sans-bold;
+  font-weight: bold;
+  src: url("./fonts/NetflixSans-Bold.otf") format("opentype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #141414;
+  font-family: netflix-sans;
+  color:white !important;
+  overflow-y:auto;
+  overflow-x:hidden;
+  
+}
+.navbar-style{
+  background: rgb(6,6,6);
+  background: linear-gradient(180deg, rgba(6,6,6,1) 0%, rgba(20,20,20,1) 100%);
+  position: sticky !important;
+  color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link{
+  color:white !important;
 }
 
-.App-link {
-  color: #61dafb;
+.no-wrap{
+  margin-left:2px;
+  flex-wrap: nowrap;
+  overflow-wrap:normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card{
+  object-fit: cover;
+  height:300px;
+  max-width:200px;
+  margin-right:20px;
+}
+
+.movie-card:hover{
+  transform: scale(1.6,1.6);
+  z-index: 2;
+  transition: .4s;
+}
+.franchise-containers{
+  margin-left:40px;
+  margin-bottom:80px;
+}
+
+.franchise-containers:first-of-type{
+  margin-top:50px;
+}
+
+.footer-columns{
+  display:flex;
+  color:grey;
+  font-size:small;
+  font-weight:bold;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+}
+.service-code{
+  color:grey;
+  font-size:small;
+  font-weight:bold;
+  border: 1px solid grey;
+  padding:4px;
+}
+
+.copyright-footer{
+  color:grey;
+  font-size:x-small;
+  font-weight:bold;
+  margin-bottom:1vw;
+}
+
+.navbar-brand{
+  color:red !important;
+}
+
+.magnify{
+  height:20px;
+}
+
+.magnify:hover{
+  filter: grayscale(.5);
+}
+
+.icons{
+  filter: brightness(0) invert(1);
+  cursor:pointer;
+}
+
+.netflix-logo{
+  height:50px;
+  margin-left:20px;
+}
+
+.avatar{
+  height:36px;
+}
+
+.dropdown{
+  height:10px;
+}
+
+.dropdown-menu{
+  transform: translate(-90px,40px);
+}
+
+.nav-drop{
+  all:unset;
+}
+
+.bg-dark{
+  color:white !important;
 }
