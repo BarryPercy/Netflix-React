@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import {Spinner, Alert} from 'react-bootstrap';
 import MovieCard from './MovieCard'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 class Carousel extends Component{
     state={
@@ -48,7 +49,7 @@ class Carousel extends Component{
                     {this.state.isError && (
                         <Alert variant="danger">Aww snap, we got an error!😨</Alert>
                     )}
-                    <MovieCard key={movie.imdbID} movie={movie}/>
+                    <Link to={'/movie-details/'+movie.imdbID}><MovieCard key={movie.imdbID} movie={movie}/></Link>
                     </>
                 )
             })
