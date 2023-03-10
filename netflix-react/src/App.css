@@ -127,3 +127,13 @@ footer{
   text-align: center;
   margin-top:30vh;
 }
+
+.backend-card-image{
+  width:250px;
+  height:200px;
+  object-fit: cover;
+}
+
+.text-black{
+  color:black;
+}
