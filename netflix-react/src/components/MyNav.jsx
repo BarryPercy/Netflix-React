@@ -11,7 +11,6 @@ const MyNav = (props) =>{
     const[selected,changeSelected] = useState(false)
     const location = useLocation()
     let placeholdertext ='';
-    console.log('location object:', location)
     if(props.searchtext!==undefined){
         placeholdertext = props.searchtext
     }else{
@@ -49,6 +48,7 @@ const MyNav = (props) =>{
                         <Link className="nav-link" href="#newandpopular">New & Popular</Link>
                         <Link className="nav-link" href="#mylist">My List</Link>
                         <Link className="nav-link" href="#browsebylanguages">Browse By Languages</Link>
+                        <Link className="nav-link" to="/backend">Back End</Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Nav className="ml-auto">

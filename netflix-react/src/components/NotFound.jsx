@@ -5,7 +5,6 @@ import Footer from './Footer'
 function App() {
   return (
     <>
-      <MyNav></MyNav>
       <NotFoundMessage />
     </>
   );
